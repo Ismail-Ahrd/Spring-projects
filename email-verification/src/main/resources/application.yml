@@ -1,0 +1,44 @@
+server:
+  port: 8087
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/REGISTRATION_DB?createDatabaseIfNotExist=true
+    username: root
+    password: 987654321rajawi
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ahroudismail1@gmail.com
+    password: 987654321rajawi
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+
+
+#spring.datasource.url=jdbc:mysql://localhost:3306/REGISTRATION_DB?createDatabaseIfNotExist=true
+#spring.datasource.username=root
+#spring.datasource.password=987654321rajawi
+#spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#spring.jpa.hibernate.ddl-auto=create
+#spring.jpa.show-sql= true
+#spring.jpa.database=mysql
+#spring.jpa.database-platform=rg.hibernate.dialect.MySQL8Dialect
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+#spring.jpa.properties.hibernate.format_sql=true
+#spring.jpa.properties.hibernate.dialect.storage_engine=innodb
+#server.port=8087
+#spring.mail.host=smtp.gmail.com
+#spring.mail.port=587
+#spring.mail.username=ahroudismail1@gmail.com
+#spring.mail.password=987654321rajawi
+#spring.mail.properties.mail.smtp.auth=true
+#spring.mail.properties.mail.smtp.starttls.enable=true
